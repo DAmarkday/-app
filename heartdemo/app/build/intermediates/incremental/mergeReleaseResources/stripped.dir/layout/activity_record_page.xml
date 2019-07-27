@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="录音和显示折线图，提示用户养生方法"-->
+        <!--android:textSize="30sp" />-->
+    <Button
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录音"
+        android:background="@drawable/button_selector"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放"
+        android:background="@drawable/button_selector"
+        android:layout_below="@+id/record"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传"
+        android:background="@drawable/button_selector"
+        android:layout_below="@+id/play"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"/>
+    <com.myhexaville.login.Painter.Electrocardiogram
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="#000"
+        android:id="@+id/electrocardiogram"/>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="用户信息"
+            android:textColor="#0e0e0e"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:textStyle="bold"
+            android:textSize="35sp" />
+        <RelativeLayout
+            android:id="@+id/R1"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+
+            android:layout_centerInParent="true"
+            android:background="@drawable/textview"
+            >
+
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="94dp"
+                android:layout_height="87dp"
+                android:background="@drawable/textview"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/user_settings" />
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_marginLeft="135dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="用户名:"
+                android:textColor="#0e0e0e"
+                android:layout_marginTop="32dp"
+                android:textStyle="normal"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/user_word"
+                android:layout_marginLeft="135dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="个人账号:"
+                android:textColor="#0e0e0e"
+                android:layout_marginTop="70dp"
+                android:textStyle="normal"
+                android:textSize="17sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="健康小提示： 一天不能吃太多的鸡蛋,吃太多的话，对母鸡身体不好，也来不及下。"
+                android:layout_centerHorizontal="true"
+                android:textColor="#0e0e0e"
+               android:layout_marginTop="135dp"
+                android:textStyle="normal"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    <TextView
+        android:id="@+id/textv"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/R1"/>
+   <Button
+       android:id="@+id/addx"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:text="   添加备注   "
+       android:background="@drawable/button_selector"
+       android:layout_below="@+id/textv"/>
+
+
+</RelativeLayout>

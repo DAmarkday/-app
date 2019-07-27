@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myhexaville.login.login.SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/e1_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="姓名"
+            android:textSize="7.5pt"
+            android:inputType="text"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff" />
+        <RadioGroup
+            android:id="@+id/e2_sex"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bubble"
+            android:layout_marginTop="16dp"
+            android:paddingStart="27dp"
+            android:paddingEnd="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="#94ffffff"
+                android:textSize="7.5pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 性别    "
+               />
+            <RadioButton
+                android:id="@+id/male"
+                android:textSize="7.5pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#94ffffff"
+                android:checked="true"
+                android:text="男"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:textSize="7.5pt"
+                android:layout_width="wrap_content"
+                android:textColor="#94ffffff"
+                android:layout_height="wrap_content"
+                android:text="女"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/e3_id"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="账号"
+            android:textSize="7.5pt"
+            android:inputType="text"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:paddingEnd="32dp"
+            android:textColorHint="#8effffff" />
+
+        <EditText
+            android:id="@+id/e4_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textSize="7.5pt"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff" />
+
+        <EditText
+            android:id="@+id/e5_make_sure_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textSize="7.5pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="确认密码"
+            android:inputType="text"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff" />
+
+
+    </LinearLayout>
+</FrameLayout>

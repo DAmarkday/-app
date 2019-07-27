@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.myhexaville.login.login.SignUpFragment"
+    >
+
+    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:texts="@array/examples"
+        app:timeout="5000"
+        android:textSize="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f5f1f1"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textSize="7.5pt"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#8effffff"
+        android:paddingEnd="32dp"
+        android:id="@+id/edit1"
+        android:background="@drawable/bubble"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:hint="@string/email"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingEnd="32dp"
+        android:textSize="7.5pt"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bubble"
+        android:id="@+id/edit2"
+        android:textColorHint="#8effffff"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:hint="@string/password"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="7.5pt"
+        android:id="@+id/forgot_password"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textColor="#ffffff" />
+</LinearLayout>

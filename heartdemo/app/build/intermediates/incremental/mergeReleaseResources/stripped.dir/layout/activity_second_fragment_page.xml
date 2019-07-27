@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="录音和显示折线图，提示用户养生方法"-->
+        <!--android:textSize="30sp" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/receive_data_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂未检测"
+            android:textSize="25pt"
+            android:textColor="#edecec"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"/>
+        <TextView
+            android:id="@+id/tim"
+            android:layout_below="@+id/receive_data_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上次检测:"
+            android:textSize="7pt"
+            android:textColor="#faf6f6"
+            android:textStyle="normal"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_below="@+id/tim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无消息"
+            android:textSize="9pt"
+            android:textColor="#faf6f6"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#17b728"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/doctor_advices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医生建议:"
+            android:textColor="#faf6f6"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="13dp"
+            android:textSize="9pt"/>
+        <TextView
+            android:id="@+id/advice"
+            android:layout_below="@+id/doctor_advices"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="13dp"
+            android:textColor="#faf6f6"
+            android:textSize="7pt"
+            android:text="暂无建议，检测上传后再试"/>
+        <Button
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳转"
+            android:background="@drawable/button_selector"
+            android:layout_below="@+id/advice"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:background="#a9d0e2"-->
+        <!--android:id="@+id/text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:text="0.3%几率可能患有心律不齐，最近注意饮食清淡防止心脏负担过重"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:textSize="10pt"-->
+
+        <!--/>-->
+
+
+
+</LinearLayout>

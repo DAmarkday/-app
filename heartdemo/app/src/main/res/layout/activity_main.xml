@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.design.widget.CoordinatorLayout
+       android:id="@+id/coordinator"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e76921"
+        android:fitsSystemWindows="true"
+        tools:context="com.myhexaville.login.login.MainActivity">
+
+        <com.myhexaville.login.FlexibleFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/wrapper"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <FrameLayout
+                android:id="@+id/sign_up_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.myhexaville.login.login.LoginSignUpChangeButton
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="switchFragment" />
+
+            <FrameLayout
+                android:id="@+id/login_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.myhexaville.login.FlexibleFrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout
+   >

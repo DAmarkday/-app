@@ -1,0 +1,4 @@
+#Sat Jul 13 16:08:10 CST 2019
+base.0=F\:\\androidkaifangkuangjia\\ui\\ui\\Android-Login-Screen-master\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex
